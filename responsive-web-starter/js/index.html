@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="en"> <!-- Apertura del elemento raíz HTML con el atributo de idioma en inglés -->
+<head> <!-- Sección de encabezado del documento -->
+<meta charset="UTF-8"> <!-- Especifica la codificación de caracteres UTF-8 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista adaptable para dispositivos móviles -->
+<title>Multi-step Registration</title> <!-- Título del documento -->
+<link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de hoja de estilos externo -->
+<script src="script.js" defer></script> <!-- Enlace al archivo de script externo con la carga diferida -->
+</head>
+<body> <!-- Cuerpo del documento -->
+<div class="container"> <!-- Contenedor principal con la clase "container" -->
+  <div id="step1" class="step"> <!-- Primer paso del formulario con la clase "step" -->
+    <h2>Step 1: Personal Information</h2> <!-- Título del paso 1 -->
+    <form id="personalInfoForm"> <!-- Formulario para la información personal con el ID "personalInfoForm" -->
+      <div> <!-- Div para el campo de nombre -->
+        <label for="name">Name:</label> <!-- Etiqueta para el campo de nombre -->
+        <input type="text" id="name" name="name" required> <!-- Campo de entrada de texto para el nombre -->
+      </div>
+      <div> <!-- Div para el campo de correo electrónico -->
+        <label for="email">Email:</label> <!-- Etiqueta para el campo de correo electrónico -->
+        <input type="email" id="email" name="email" required> <!-- Campo de entrada de correo electrónico -->
+      </div>
+      <button type="button" onclick="nextStep(1)">Next</button> <!-- Botón para avanzar al siguiente paso -->
+    </form>
+  </div>
+  <div id="step2" class="step"> <!-- Segundo paso del formulario con la clase "step" -->
+    <h2>Step 2: Choose Topic</h2> <!-- Título del paso 2 -->
+    <form id="topicForm"> <!-- Formulario para seleccionar un tema con el ID "topicForm" -->
+      <div> <!-- Div para el campo de selección de tema -->
+        <label for="topic">Choose a topic:</label> <!-- Etiqueta para el campo de selección de tema -->
+        <select id="topic" name="topic"> <!-- Menú desplegable para seleccionar un tema -->
+          <option value="">Select a topic</option> <!-- Opción predeterminada -->
+          <option value="technology">Technology</option> <!-- Opciones de tema -->
+          <option value="science">Science</option>
+          <option value="art">Art</option>
+          <option value="music">Music</option>
+        </select>
+      </div>
+      <button type="button" onclick="nextStep(2)">Next</button> <!-- Botón para avanzar al siguiente paso -->
+    </form>
+  </div>
+  <div id="step3" class="step"> <!-- Tercer paso del formulario con la clase "step" -->
+    <h2>Step 3: Confirmation</h2> <!-- Título del paso 3 -->
+    <form id="confirmationForm"> <!-- Formulario para la confirmación con el ID "confirmationForm" -->
+      <p id="confirmationMessage">Are you sure?</p> <!-- Mensaje de confirmación -->
+      <p id="userData"></p> <!-- Contenedor para mostrar la información del usuario -->
+    </form>
+    <button id="confirmButton" onclick="confirmRegistration()">Confirm</button> <!-- Botón para confirmar el registro -->
+    <button id="homeButton" style="display: none;" onclick="goToStep(1)">Home</button> <!-- Botón para volver al paso 1 -->
+  </div>  
+</div>
+
+<script src="script.js"></script> <!-- Enlace al archivo de script -->
+</body> <!-- Cierre del cuerpo del documento -->
+</html> <!-- Cierre del documento HTML -->

@@ -1,0 +1,72 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Establece la fuente para el cuerpo del documento */
+  background-color: #121826; /* Establece el color de fondo del cuerpo del documento */
+  margin: 0; /* Elimina el margen exterior del cuerpo */
+  padding: 0; /* Elimina el relleno del cuerpo */
+}
+
+.container {
+  max-width: 600px; /* Establece el ancho máximo del contenedor principal */
+  margin: 50px auto; /* Establece márgenes superior e inferior automáticos y 50px de margen izquierdo y derecho */
+  background-color: #212936; /* Establece el color de fondo del contenedor principal */
+  padding: 20px; /* Establece el relleno del contenedor principal */
+  border-radius: 8px; /* Establece el radio de borde del contenedor principal */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra al contenedor principal */
+}
+
+.step {
+  display: none; /* Oculta los elementos con la clase 'step' */
+}
+
+.step h2 {
+  font-style: italic; /* Establece el estilo de la fuente como itálico para los títulos h2 dentro de elementos con la clase 'step' */
+  font-size: 24px; /* Establece el tamaño de fuente de los títulos h2 dentro de elementos con la clase 'step' */
+  margin-bottom: 20px; /* Establece el margen inferior de los títulos h2 dentro de elementos con la clase 'step' */
+  color: #f3eeee; /* Establece el color de texto de los títulos h2 dentro de elementos con la clase 'step' */
+  text-align: center; /* Establece la alineación del texto de los títulos h2 dentro de elementos con la clase 'step' */
+}
+
+form div {
+  margin-bottom: 20px; /* Establece el margen inferior de los elementos div dentro de formularios */
+}
+
+label {
+  display: block; /* Establece las etiquetas como bloques */
+  font-style: italic; /* Establece el estilo de la fuente como itálico para las etiquetas */
+  font-weight: bold; /* Establece el peso de la fuente en negrita para las etiquetas */
+  color: #f3eeee; /* Establece el color de texto de las etiquetas */
+  text-align: center; /* Establece la alineación del texto de las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: calc(100% - 22px); /* Establece el ancho de los campos de entrada de texto y select */
+  padding: 10px; /* Establece el relleno de los campos de entrada de texto y select */
+  border: 1px solid #555; /* Establece el borde de los campos de entrada de texto y select */
+  border-radius: 5px; /* Establece el radio de borde de los campos de entrada de texto y select */
+  font-size: 16px; /* Establece el tamaño de fuente de los campos de entrada de texto y select */
+}
+
+button {
+  padding: 10px 20px; /* Establece el relleno del botón */
+  background-color: #652CD1; /* Establece el color de fondo del botón */
+  color: #f3eeee; /* Establece el color de texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Establece el radio de borde del botón */
+  cursor: pointer; /* Establece el cursor del ratón como puntero cuando pasa sobre el botón */
+  font-style: italic; /* Establece el estilo de la fuente como itálico para el texto del botón */
+  font-size: 16px; /* Establece el tamaño de fuente del texto del botón */
+  transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo del botón */
+}
+
+button:hover {
+  background-color: #652CD1; /* Cambia el color de fondo del botón cuando el cursor se coloca sobre él */
+}
+
+p {
+  font-size: 18px; /* Establece el tamaño de fuente de los párrafos */
+  margin-top: 20px; /* Establece el margen superior de los párrafos */
+  text-align: center; /* Establece la alineación del texto de los párrafos */
+  color: #007bff; /* Establece el color de texto de los párrafos */
+}
